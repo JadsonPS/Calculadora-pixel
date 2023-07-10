@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    
+    <title>Calculadora</title>
+</head>
+<body>
+
+  
+
+
+    <div class="container">
+        <div class="tela" id="tela"> </div>
+        <div id="memori"><p>M</p></div>
+        <div class="container-botoes">
+            <div class="numeros">
+
+                <div class="numeros-coluna">
+                    <div class="botao letraFont posicionamentoLetras" id="onOff" onclick="onOff()">on <br> off</div>
+                    <div class="botao " id="m" onclick="memoria('m')">M</div>
+                    <div class="botao" id="mMais" onclick="memoria('mMais')">M+</div>
+                    <div class="botao" id="mMenos" onclick="memoria('mMenos')">M-</div>
+                
+                </div>
+
+                <div class="numeros-coluna">
+                    <div class="botao" id="ce" onclick="clian()">AC</div>
+                    <div class="botao" id="del" onclick="deletar()">DEL</div>
+                    <div class="botao" id="porcentagem" onclick="memoria('mc')">MC</div>
+                    <div class="botao" id="raiz" onclick="raiz()">RAIZ</div>
+                
+                </div>
+
+            
+                <div class="numeros-coluna">
+                    <div class="botao" id="sete" onclick="botaoClick(7)">7</div>
+                    <div class="botao" id="oito" onclick="botaoClick(8)">8</div>
+                    <div class="botao" id="nove" onclick="botaoClick(9)">9</div>
+                    <div class="botao" id="divisao" onclick="botaoClick('/')">/</div>
+                
+                </div>
+
+                <div class="numeros-coluna">
+                    <div class="botao" id="quatro"onclick="botaoClick(4)">4</div>
+                    <div class="botao" id="cinco" onclick="botaoClick(5)">5</div>
+                    <div class="botao" id="seis" onclick="botaoClick(6)">6</div>
+                    <div class="botao" id="multiplicacao" onclick="botaoClick('*')">*</div>
+                
+                </div>
+
+                <div class="numeros-coluna">
+                    <div class="botao" id="um" onclick="botaoClick(1)">1</div>
+                    <div class="botao" id="dois" onclick="botaoClick(2)">2</div>
+                    <div class="botao" id="tres" onclick="botaoClick(3)">3</div>
+                    <div class="botao" id="menos" onclick="botaoClick('-')">-</div>
+                
+                </div>
+
+                <div class="numeros-coluna">
+                    <div class="botao" id="zero" onclick="botaoClick(0)">0</div>
+                    <div class="botao" id="ponto" onclick="botaoClick('.')">.</div>
+                    <div class="botao" id="igual" onclick="calcular()">=</div>
+                    <div class="botao" id="mais" onclick="botaoClick('+')">+</div>
+               
+                </div>
+                
+            </div>
+
+      
+            
+        </div>
+    </div>
+
+
+</body>
+<script src="./script.js"></script>
+</html>
