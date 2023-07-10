@@ -146,7 +146,7 @@ body{
     background-size: cover;
     padding-top: 9px;
 
-   
+   cursor:url(./hand-cursor.png), default; 
 }
 
 .botao:active{
